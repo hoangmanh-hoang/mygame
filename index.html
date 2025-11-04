@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI GAME - Hidden Picture</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS riêng cho trang chủ */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f4f8; 
+            text-align: center;
+        }
+        .home-container {
+            background-color: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 77, 153, 0.2);
+            max-width: 600px;
+            width: 90%;
+        }
+        .home-container h1 {
+            color: #004d99;
+            font-size: 3em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #ffcc00;
+            padding-bottom: 10px;
+        }
+        .button-group a {
+            display: block;
+            margin: 20px 0;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            text-decoration: none;
+            color: white;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold;
+        }
+        .button-group a:hover {
+            transform: translateY(-3px);
+        }
+        #rules-btn {
+            background-color: #3498db; /* Xanh dương */
+        }
+        #rules-btn:hover {
+            background-color: #2980b9;
+        }
+        #play-btn {
+            background-color: #2ecc71; /* Xanh lá cây */
+        }
+        #play-btn:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="home-container">
+        <h1>🔍 HIDDEN PICTURE GAME 🤖</h1>
+        <p style="font-size: 1.2em; color: #555; margin-bottom: 40px;">Explore the mysterious picture of technology!</p>
+        <div class="button-group">
+            <a href="rules.html" id="rules-btn">💡 Rules & Instructions</a>
+            <a href="main_game.html" id="play-btn">▶️ Start Playing Now</a>
+        </div>
+    </div>
+</body>
+</html>

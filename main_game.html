@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Game Day - AI Hidden Picture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>English Game Day: Hidden Picture</h1>
+        <p>Topic: Technology (A2/B1 Level)</p>
+        <div id="score-display">
+            <span id="team1-score">Team 1 Score: 0</span>
+            <span id="team2-score">Team 2 Score: 0</span>
+        </div>
+    </div>
+
+    <div class="game-container">
+        <div id="hidden-picture-grid">
+            <div id="tile-center" class="tile-large"></div>
+            </div>
+        
+        <div class="challenge-area">
+            <button id="obstacle-challenge-btn" onclick="startObstacleChallenge()">Answer Obstacle</button>
+        </div>
+
+        <div id="question-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <div id="timer-display">30</div>
+                <h2 id="question-text"></h2>
+                
+                <input type="text" id="answer-input" placeholder="Enter team's answer...">
+                
+                <div class="team-buttons">
+                    <button onclick="checkAnswer(1)">Team 1 Answered</button>
+                    <button onclick="checkAnswer(2)">Team 2 Answered</button>
+                </div>
+                
+                <p id="feedback"></p>
+            </div>
+        </div>
+        <div id="obstacle-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h2>Obstacle Challenge: Reveal the Hidden Picture!</h2>
+                <p>What is the full picture? (3 words)</p>
+                
+                <input type="text" id="obstacle-answer-input" placeholder="Enter your answer (3 words)...">
+                
+                <div class="team-buttons">
+                    <button onclick="checkObstacleAnswer(1)">Team 1 Answered</button>
+                    <button onclick="checkObstacleAnswer(2)">Team 2 Answered</button>
+                </div>
+                
+                <p id="obstacle-feedback"></p>
+            </div>
+        </div>
+        
+        <div id="final-reveal" class="hidden">
+            <h2>🎉 CONGRATULATIONS! 🎉</h2>
+            <p id="winner-text"></p>
+            <button onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Game Rules</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS riêng cho trang luật chơi (Giữ nguyên từ code trước) */
+        body {
+            background-color: #f0f4f8; 
+            padding: 40px;
+            text-align: left;
+        }
+        .rules-container {
+            background-color: white;
+            padding: 30px 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 77, 153, 0.2);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .rules-container h1 {
+            color: #c0392b; 
+            border-bottom: 3px solid #ffcc00;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .rule-section {
+            margin-bottom: 25px;
+        }
+        .rule-section h2 {
+            color: #004d99; 
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .rule-section p {
+            font-size: 1.15em; 
+            line-height: 1.6;
+            color: #333;
+        }
+        .back-btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto 0;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .back-btn:hover {
+            background-color: #2980b9;
+        }
+        /* Thêm style cho danh sách */
+        .rule-section ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding-left: 0;
+            font-size: 1.15em;
+            line-height: 1.6;
+            color: #333;
+        }
+        .rule-section ul ul {
+            list-style: circle;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="rules-container">
+        <h1>💡 SIMPLE RULES - AI HIDDEN PICTURE GAME</h1>
+        
+        <div class="rule-section">
+            <h2>1. 🧑‍🤝‍🧑 Getting Ready (Let's start!)</h2>
+            <p>First, we will divide the class into **two teams** (Team 1 and Team 2). Each team will have a chance to answer questions to open the squares on the screen.</p>
+        </div>
+
+        <div class="rule-section">
+            <h2>2. 🗺️ The Game Board (What you see)</h2>
+            <p>The screen shows one big picture covered by **16 small tiles** and **one big red obstacle tile** in the middle. Your goal is to answer all the questions to open the tiles and guess **what the final picture is**.</p>
+        </div>
+        
+        <div class="rule-section">
+            <h2>3. ❓ How to Play (Your turn)</h2>
+            <ul>
+                <li>Teams take turns to choose a **closed tile** (from 1 to 16).</li>
+                <li>Each tile has a **knowledge question** about technology.</li> 
+                <li>After a tile is chosen, both teams have **30 seconds** to give their answer.</li>
+                <li>
+                    <ul>
+                        <li>If a team answers **correctly**, they get **100 points**, and the tile opens, showing part of the hidden picture.</li>
+                        <li>If a team answers **wrong** or runs out of time, the tile gets an **X mark** and the other team might get a chance to steal the point.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="rule-section">
+            <h2>4. 🛑 The Red Tile - Obstacle (The big prize)</h2>
+            <p>The big red tile in the center is the **Special Obstacle Tile**. This tile covers four small tiles underneath. **Only when you answer the Obstacle Challenge correctly**, the red tile will disappear, and the four small tiles will open automatically. The correct answer for the Obstacle is worth **1000 points**!</p>
+        </div>
+
+        <div class="rule-section">
+            <h2>5. 🏆 The End (Who wins?)</h2>
+            <p>The game finishes when **all 16 small tiles** are open. The team with the **highest total score** wins the game!</p>
+        </div>
+        
+        <a href="index.html" class="back-btn">⬅️ Go back to Home Page</a>
+    </div>
+</body>
+</html>
