@@ -18,6 +18,17 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* --- FOOTER COPYRIGHT STYLE --- */
+.footer {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9em; /* Cỡ chữ nhỏ hơn một chút */
+    color: #888; /* Màu xám nhạt */
+    margin-top: 30px; /* Tạo khoảng cách với nội dung phía trên */
+    border-top: 1px solid #ddd; /* Đường kẻ phân cách */
+    background-color: #f7f7f7; /* Màu nền nhẹ */
+}
 
 #score-display {
     font-size: 1.5em;
@@ -226,4 +237,5 @@ body {
     0% { transform: scale(1); }
     50% { transform: scale(1.02); }
     100% { transform: scale(1); }
+
 }
