@@ -1,5 +1,5 @@
 const questions = [
-    { question: "What is the name of a computer program that can perform human tasks? (2 words)", answer: "ARTIFICIAL INTELLIGENCE" },
+    { question: "What is the name of a computer program that can perform human tasks? (2 words)", answer: "AI AGENT" },
     { question: "A machine that can carry out complex actions automatically is a __.", answer: "ROBOT" },
     { question: "This device helps you type and enter information into the computer.", answer: "KEYBOARD" },
     { question: "What do you click on to open a file or program?", answer: "ICON" },
@@ -10,14 +10,14 @@ const questions = [
     { question: "What is a collection of computers connected together?", answer: "NETWORK" },
     { question: "Finding and fixing mistakes in computer code is called __.", answer: "DEBUGGING" }, // ĐÃ SỬA LỖI Ở ĐÂY
     { question: "The digital space where you can save documents and pictures (2 words).", answer: "CLOUD STORAGE" },
-    { question: "The instructions a computer follows are called __.", answer: "SOFTWARE" },
+    { question: "A general term for the programs that run on a computer.", answer: "SOFTWARE" },
     { question: "What does 'WWW' stand for?", answer: "WORLD WIDE WEB" },
     { question: "A private digital letter sent over the internet.", answer: "EMAIL" },
     { question: "The button you press on the mouse is the __.", answer: "CLICK" },
     { question: "A series of steps for a computer to solve a problem is an __.", answer: "ALGORITHM" }
 ];
 
-const OBSTACLE_ANSWER = "ARTIFICIAL INTELLIGENCE";
+const OBSTACLE_ANSWER = "AI AGENT";
 const OBSTACLE_POINTS = 1000;
 
 let currentQuestionIndex = -1;
@@ -26,7 +26,7 @@ let scores = { 1: 0, 2: 0 };
 let revealedSmallTilesCount = 0; 
 const totalSmallTiles = 16; 
 let timerInterval;
-const TIME_LIMIT = 30; 
+const TIME_LIMIT = 45; 
 let answeredTiles = new Set(); 
 let incorrectTiles = new Set(); 
 
@@ -279,4 +279,5 @@ function checkWinCondition() {
 
 function resetGame() {
     window.location.reload(); 
+
 }
